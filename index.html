@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="result" placeholder="0" readonly>
+            <button id="clear" onclick="remove_last()">C</button>
+            <button id="delete" onclick="clearbox()">DEL</button>
+            <button id="percentage" onclick="display_num('%')">%</button>
+            <button id="division" onclick="display_num('/')">/</button>
+            <button id="seven" onclick="display_num(7)">7</button>
+            <button id="eight" onclick="display_num(8)">8</button>
+            <button id="nine" onclick="display_num(9)">9</button>
+            <button id="multiply" onclick="display_num('*')">*</button>
+            <button id="four" onclick="display_num(4)">4</button>
+            <button id="five" onclick="display_num(5)">5</button>
+            <button id="six" onclick="display_num(6)">6</button>
+            <button id="substract" onclick="display_num('-')">-</button>
+            <button id="one" onclick="display_num(1)">1</button>
+            <button id="two" onclick="display_num(2)">2</button>
+            <button id="three" onclick="display_num(3)">3</button>
+            <button id="add" onclick="display_num('+')">+</button>
+            <button id="dot" onclick="display_num('.')">.</button>
+            <button id="zero" onclick="display_num(0)">0</button>
+            <button id="equal" onclick="evaluateExpression()" class="equal">=</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
